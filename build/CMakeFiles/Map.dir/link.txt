@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libMap.a CMakeFiles/Map.dir/cppFiles/Map.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libMap.a
