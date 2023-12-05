@@ -16,21 +16,23 @@ void Map<T>::put(std::string key, T arg) {
     if (this->capacity == this->size) throw std::runtime_error("table is full");
     int ind = hash(key) % capacity;
     while (this->buckets[ind].getBusy() != false) {
-        if (this->buckets[ind].getKey() != key) {
+        if (this->buckets[ind].getKey() == key) {
             this->buckets[ind].setArg(arg);
+            return;
         }
         ind++;
         ind = ind % capacity;
     }
     this->buckets[ind] = Bucket<T>(key, arg);
+    size++;
 }
 
 template<typename T>
 T Map<T>::get(std::string key) {
-    if (this->csize == 0) throw std::runtime_error("map is empty");
-    int ind = hash(key);
-    if (this->bcts[ind] == nullptr) return nullptr;
-    return this->bcts[ind];
+    if (this->size == 0) throw std::runtime_error("map is empty");
+    int ind = hash(key) % capacity;
+    if (this->buckets[ind].getBusy() == false) throw std::runtime_error("loh");
+    return this->buckets[ind].getArg();
 }
 
 template<typename T>
@@ -41,31 +43,22 @@ int Map<T>::hash(std::string key) {
 }
 
 template<typename T>
-void Map<T>::print() {
-
+std::string Map<T>::print() {
+    std::string ans;
+    for (int i = 0; i < capacity; i++) {
+        if (buckets[i].getBusy()) {
+            ans += buckets[i].getKey() + " " + std::to_string(buckets[i].getArg()) + "\n";
+                    //std::cout << buckets[i].getKey() << " " << buckets[i].getArg() << std::endl;
+        }
+    }
+    return ans;
 }
 
 template<typename T>
 void Map<T>::remove(std::string key) {
-    Bucket<T> bucket = get(key);
-    bucket.setBusy(false);
+    int ind = hash(key) % capacity;
+    this->buckets[ind].setBusy(false);
 }
 
-template<typename T>
-std::ostream operator<<(std::ostream &out, Map<T> obj) {
-    for (int i = 0; i < obj.capacity; i++) {
-        if (obj.buckets[i].getBusy()) {
-            std::cout << obj.buckets[i].getKey();
-            std::cout << obj.buckets[i].getArg();
-        }
-    }
-    return std::ostream(nullptr);
-}
-
-//template<typename T>
-//std::istream operator<<(std::istream &out, Map<T> obj) {
-//
-//    return std::istream(nullptr);
-//}
 
 

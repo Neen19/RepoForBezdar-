@@ -5,14 +5,20 @@
 // #include "Map.cpp"
 // #include "Bucket.cpp"
 
+#include "../headers/Agencies/Seal.h"
+#include <iostream>
+
 
 int main() {
-    Map<std::string> map;
-    map.put("key1", "arg1");
-    map.put("key1", "arg1");
-    map.put("key2", "arg2");
-    map.put("key3", "arg3");
-    map.put("key4", "arg4");
-    map.put("key5", "arg5");
-    std:: cout << map;
+
+//    Seal *tel = new Seal();
+//    tel->setProfile("lal");
+//    Map<NewsAgency*> map;
+//    map.put("key", tel);
+//    Seal *elem = dynamic_cast<Seal*>(map.get("key"));
+    Map<int> map;
+    map.put("key1", 1);
+    map.put("key2", 2);
+    std::string str = map.print();
+    std::cout << str;
 }
