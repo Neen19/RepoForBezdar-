@@ -10,11 +10,20 @@
 class Seal : public NewsAgency {
 
 public:
-    Seal(): NewsAgency(AgencyType::SEAL) {};
+    Seal() : NewsAgency(AgencyType::SEAL) {};
+
     std::string getEdition();
+
     void setEdition(std::string edition);
+
     std::set<Week> getDays();
-    void setDays(std::vector<Week>);
+
+    void setDays(std::set<Week>);
+
+    friend std::ostream &operator<<(std::ostream& s, const Seal& seal) {
+        s << seal.profile;
+        return s;
+    }
 
 private:
     std::string edition;

@@ -53,13 +53,77 @@ build Map: phony
 build Bucket: phony
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target NewsAgency
+
+
+#############################################
+# Order-only phony target for NewsAgency
+
+build cmake_object_order_depends_target_NewsAgency: phony || CMakeFiles/NewsAgency.dir
+
+build CMakeFiles/NewsAgency.dir/cppFiles/Agencies/NewsAgency.cpp.o: CXX_COMPILER__NewsAgency_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppFiles/Agencies/NewsAgency.cpp || cmake_object_order_depends_target_NewsAgency
+  DEP_FILE = CMakeFiles/NewsAgency.dir/cppFiles/Agencies/NewsAgency.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/NewsAgency.dir
+  OBJECT_FILE_DIR = CMakeFiles/NewsAgency.dir/cppFiles/Agencies
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target NewsAgency
+
+
+#############################################
+# Link the static library libNewsAgency.a
+
+build libNewsAgency.a: CXX_STATIC_LIBRARY_LINKER__NewsAgency_Debug CMakeFiles/NewsAgency.dir/cppFiles/Agencies/NewsAgency.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/NewsAgency.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libNewsAgency.a
+  TARGET_PDB = NewsAgency.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target App
+
+
+#############################################
+# Order-only phony target for App
+
+build cmake_object_order_depends_target_App: phony || CMakeFiles/App.dir
+
+build CMakeFiles/App.dir/cppFiles/App.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppFiles/App.cpp || cmake_object_order_depends_target_App
+  DEP_FILE = CMakeFiles/App.dir/cppFiles/App.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/App.dir
+  OBJECT_FILE_DIR = CMakeFiles/App.dir/cppFiles
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target App
+
+
+#############################################
+# Link the static library libApp.a
+
+build libApp.a: CXX_STATIC_LIBRARY_LINKER__App_Debug CMakeFiles/App.dir/cppFiles/App.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/App.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libApp.a
+  TARGET_PDB = App.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target main
 
 
 #############################################
 # Order-only phony target for main
 
-build cmake_object_order_depends_target_main: phony || Bucket Map
+build cmake_object_order_depends_target_main: phony || Bucket Map cmake_object_order_depends_target_App cmake_object_order_depends_target_NewsAgency
 
 build CMakeFiles/main.dir/cppFiles/main.cpp.o: CXX_COMPILER__main_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppFiles/main.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/cppFiles/main.cpp.o.d
@@ -75,8 +139,9 @@ build CMakeFiles/main.dir/cppFiles/main.cpp.o: CXX_COMPILER__main_unscanned_Debu
 #############################################
 # Link the executable main
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/cppFiles/main.cpp.o || Bucket Map
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/cppFiles/main.cpp.o | libNewsAgency.a libApp.a libNewsAgency.a libApp.a || Bucket Map libApp.a libNewsAgency.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = libNewsAgency.a  libApp.a  libNewsAgency.a  libApp.a
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -109,6 +174,10 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build App: phony libApp.a
+
+build NewsAgency: phony libNewsAgency.a
+
 # =============================================================================
 # Folder targets.
 
@@ -117,7 +186,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/nikita/CLionProjects/lab3/cmake-build-debug
 
-build all: phony Map Bucket main
+build all: phony Map Bucket libNewsAgency.a libApp.a main
 
 # =============================================================================
 # Built-in targets

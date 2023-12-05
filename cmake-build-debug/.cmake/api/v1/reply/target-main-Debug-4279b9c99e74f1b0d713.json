@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -57,11 +57,19 @@
 	[
 		{
 			"backtrace" : 1,
-			"id" : "Map::@6890427a1f51a3e7e1df"
+			"id" : "Bucket::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 1,
-			"id" : "Bucket::@6890427a1f51a3e7e1df"
+			"id" : "NewsAgency::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 1,
+			"id" : "App::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 1,
+			"id" : "Map::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "main::@6890427a1f51a3e7e1df",
@@ -76,6 +84,26 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "libNewsAgency.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "libApp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "libNewsAgency.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "libApp.a",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"

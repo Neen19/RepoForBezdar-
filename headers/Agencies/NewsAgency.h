@@ -13,10 +13,14 @@
 class NewsAgency {
 
 public:
+    NewsAgency() = default;
     AgencyType getType();
     std::string getAddr();
     std::string getProfile();
     int getLicense();
+    void setProfile(std::string profile) {
+        this->profile = profile;
+    }
 
 protected:
     NewsAgency(AgencyType type);
