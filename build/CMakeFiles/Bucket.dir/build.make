@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.5/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.27.5/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nikita/CLionProjects/lab3
+CMAKE_SOURCE_DIR = /home/students/s/sarmosov.na/OOP/lab/lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nikita/CLionProjects/lab3/build
+CMAKE_BINARY_DIR = /home/students/s/sarmosov.na/OOP/lab/lab3/build
 
 # Utility rule file for Bucket.
 
@@ -78,6 +78,6 @@ CMakeFiles/Bucket.dir/clean:
 .PHONY : CMakeFiles/Bucket.dir/clean
 
 CMakeFiles/Bucket.dir/depend:
-	cd /Users/nikita/CLionProjects/lab3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nikita/CLionProjects/lab3 /Users/nikita/CLionProjects/lab3 /Users/nikita/CLionProjects/lab3/build /Users/nikita/CLionProjects/lab3/build /Users/nikita/CLionProjects/lab3/build/CMakeFiles/Bucket.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/students/s/sarmosov.na/OOP/lab/lab3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/students/s/sarmosov.na/OOP/lab/lab3 /home/students/s/sarmosov.na/OOP/lab/lab3 /home/students/s/sarmosov.na/OOP/lab/lab3/build /home/students/s/sarmosov.na/OOP/lab/lab3/build /home/students/s/sarmosov.na/OOP/lab/lab3/build/CMakeFiles/Bucket.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Bucket.dir/depend
 

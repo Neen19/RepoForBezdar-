@@ -5,6 +5,9 @@ project(lab3)
 set(CMAKE_CXX_STANDARD 20)
 
 
+add_compile_options(-fprofile-arcs -ftest-coverage)
+link_libraries(gcov)
+
 add_library(Map INTERFACE headers/Map.h cppfiles/Map.tcc)
 add_library(Bucket INTERFACE headers/Bucket.h cppfiles/Bucket.tcc)
 add_library(NewsAgency headers/agencies/NewsAgency.h cppfiles/agencies/NewsAgency.cpp)

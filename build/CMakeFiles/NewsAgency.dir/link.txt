@@ -1,0 +1,2 @@
+/usr/bin/ar qc libNewsAgency.a CMakeFiles/NewsAgency.dir/cppfiles/agencies/NewsAgency.cpp.o
+/usr/bin/ranlib libNewsAgency.a

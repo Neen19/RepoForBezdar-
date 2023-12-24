@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
+#include <catch2/catch.hpp>
 
-#include "../catch.hpp"
 #include "../headers/agencies/NewsAgency.h"
 #include "../headers/agencies/Seal.h"
 #include "../headers/Map.h"

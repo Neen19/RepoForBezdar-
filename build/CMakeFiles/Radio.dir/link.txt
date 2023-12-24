@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRadio.a CMakeFiles/Radio.dir/cppfiles/agencies/Radio.cpp.o
+/usr/bin/ranlib libRadio.a

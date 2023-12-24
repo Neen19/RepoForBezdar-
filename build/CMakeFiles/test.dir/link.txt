@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test.dir/tests/Test.cpp.o -o test  -lgcov libmains.a libtests.a libNewsAgency.a libApp.a libRadio.a libSeal.a libNewsAgency.a libApp.a libRadio.a libSeal.a -lgcov 

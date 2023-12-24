@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSeal.a CMakeFiles/Seal.dir/cppfiles/agencies/Seal.cpp.o
+/usr/bin/ranlib libSeal.a
