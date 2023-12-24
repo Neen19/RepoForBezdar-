@@ -17,3 +17,7 @@ std::ostream &operator<<(std::ostream& ostream, const Seal& seal) {
     return ostream;
 }
 
+Seal::Seal(const std::string &id, int license, const std::string &addres, const std::string &profile, AgencyType type,
+           const std::string &edition, const std::set<Week> &days) : NewsAgency(id, license, addres, profile, type),
+                                                                     edition(edition), days(days) {}
+

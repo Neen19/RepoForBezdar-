@@ -69,31 +69,37 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/cppFiles/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/cppFiles/main.cpp.o: /Users/nikita/CLionProjects/lab3/cppFiles/main.cpp
-CMakeFiles/main.dir/cppFiles/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/cppFiles/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/cppFiles/main.cpp.o -MF CMakeFiles/main.dir/cppFiles/main.cpp.o.d -o CMakeFiles/main.dir/cppFiles/main.cpp.o -c /Users/nikita/CLionProjects/lab3/cppFiles/main.cpp
+CMakeFiles/main.dir/cppfiles/main.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/cppfiles/main.cpp.o: /Users/nikita/CLionProjects/lab3/cppfiles/main.cpp
+CMakeFiles/main.dir/cppfiles/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/cppfiles/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/cppfiles/main.cpp.o -MF CMakeFiles/main.dir/cppfiles/main.cpp.o.d -o CMakeFiles/main.dir/cppfiles/main.cpp.o -c /Users/nikita/CLionProjects/lab3/cppfiles/main.cpp
 
-CMakeFiles/main.dir/cppFiles/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/cppFiles/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikita/CLionProjects/lab3/cppFiles/main.cpp > CMakeFiles/main.dir/cppFiles/main.cpp.i
+CMakeFiles/main.dir/cppfiles/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/cppfiles/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikita/CLionProjects/lab3/cppfiles/main.cpp > CMakeFiles/main.dir/cppfiles/main.cpp.i
 
-CMakeFiles/main.dir/cppFiles/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cppFiles/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikita/CLionProjects/lab3/cppFiles/main.cpp -o CMakeFiles/main.dir/cppFiles/main.cpp.s
+CMakeFiles/main.dir/cppfiles/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cppfiles/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikita/CLionProjects/lab3/cppfiles/main.cpp -o CMakeFiles/main.dir/cppfiles/main.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/cppFiles/main.cpp.o"
+"CMakeFiles/main.dir/cppfiles/main.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/cppFiles/main.cpp.o
+main: CMakeFiles/main.dir/cppfiles/main.cpp.o
 main: CMakeFiles/main.dir/build.make
-main: libMap.a
-main: libBucket.a
+main: libNewsAgency.a
+main: libApp.a
+main: libRadio.a
+main: libSeal.a
+main: libNewsAgency.a
+main: libApp.a
+main: libRadio.a
+main: libSeal.a
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

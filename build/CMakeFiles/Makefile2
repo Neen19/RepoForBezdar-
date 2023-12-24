@@ -65,6 +65,11 @@ CMAKE_BINARY_DIR = /Users/nikita/CLionProjects/lab3/build
 # The main recursive "all" target.
 all: CMakeFiles/Map.dir/all
 all: CMakeFiles/Bucket.dir/all
+all: CMakeFiles/NewsAgency.dir/all
+all: CMakeFiles/App.dir/all
+all: CMakeFiles/Radio.dir/all
+all: CMakeFiles/Seal.dir/all
+all: CMakeFiles/test.dir/all
 all: CMakeFiles/main.dir/all
 .PHONY : all
 
@@ -75,6 +80,11 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/Map.dir/clean
 clean: CMakeFiles/Bucket.dir/clean
+clean: CMakeFiles/NewsAgency.dir/clean
+clean: CMakeFiles/App.dir/clean
+clean: CMakeFiles/Radio.dir/clean
+clean: CMakeFiles/Seal.dir/clean
+clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
@@ -85,12 +95,12 @@ clean: CMakeFiles/main.dir/clean
 CMakeFiles/Map.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=3,4 "Built target Map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num= "Built target Map"
 .PHONY : CMakeFiles/Map.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Map.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Map.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
 .PHONY : CMakeFiles/Map.dir/rule
@@ -111,12 +121,12 @@ CMakeFiles/Map.dir/clean:
 CMakeFiles/Bucket.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bucket.dir/build.make CMakeFiles/Bucket.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bucket.dir/build.make CMakeFiles/Bucket.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=1,2 "Built target Bucket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num= "Built target Bucket"
 .PHONY : CMakeFiles/Bucket.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Bucket.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Bucket.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
 .PHONY : CMakeFiles/Bucket.dir/rule
@@ -131,19 +141,158 @@ CMakeFiles/Bucket.dir/clean:
 .PHONY : CMakeFiles/Bucket.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/NewsAgency.dir
+
+# All Build rule for target.
+CMakeFiles/NewsAgency.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewsAgency.dir/build.make CMakeFiles/NewsAgency.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewsAgency.dir/build.make CMakeFiles/NewsAgency.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=3,4 "Built target NewsAgency"
+.PHONY : CMakeFiles/NewsAgency.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NewsAgency.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NewsAgency.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
+.PHONY : CMakeFiles/NewsAgency.dir/rule
+
+# Convenience name for target.
+NewsAgency: CMakeFiles/NewsAgency.dir/rule
+.PHONY : NewsAgency
+
+# clean rule for target.
+CMakeFiles/NewsAgency.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewsAgency.dir/build.make CMakeFiles/NewsAgency.dir/clean
+.PHONY : CMakeFiles/NewsAgency.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/App.dir
+
+# All Build rule for target.
+CMakeFiles/App.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=1,2 "Built target App"
+.PHONY : CMakeFiles/App.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/App.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/App.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
+.PHONY : CMakeFiles/App.dir/rule
+
+# Convenience name for target.
+App: CMakeFiles/App.dir/rule
+.PHONY : App
+
+# clean rule for target.
+CMakeFiles/App.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/clean
+.PHONY : CMakeFiles/App.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Radio.dir
+
+# All Build rule for target.
+CMakeFiles/Radio.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Radio.dir/build.make CMakeFiles/Radio.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Radio.dir/build.make CMakeFiles/Radio.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=5,6 "Built target Radio"
+.PHONY : CMakeFiles/Radio.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Radio.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Radio.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
+.PHONY : CMakeFiles/Radio.dir/rule
+
+# Convenience name for target.
+Radio: CMakeFiles/Radio.dir/rule
+.PHONY : Radio
+
+# clean rule for target.
+CMakeFiles/Radio.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Radio.dir/build.make CMakeFiles/Radio.dir/clean
+.PHONY : CMakeFiles/Radio.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Seal.dir
+
+# All Build rule for target.
+CMakeFiles/Seal.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Seal.dir/build.make CMakeFiles/Seal.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Seal.dir/build.make CMakeFiles/Seal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=7,8 "Built target Seal"
+.PHONY : CMakeFiles/Seal.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Seal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Seal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
+.PHONY : CMakeFiles/Seal.dir/rule
+
+# Convenience name for target.
+Seal: CMakeFiles/Seal.dir/rule
+.PHONY : Seal
+
+# clean rule for target.
+CMakeFiles/Seal.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Seal.dir/build.make CMakeFiles/Seal.dir/clean
+.PHONY : CMakeFiles/Seal.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test.dir
+
+# All Build rule for target.
+CMakeFiles/test.dir/all: CMakeFiles/Map.dir/all
+CMakeFiles/test.dir/all: CMakeFiles/Bucket.dir/all
+CMakeFiles/test.dir/all: CMakeFiles/NewsAgency.dir/all
+CMakeFiles/test.dir/all: CMakeFiles/App.dir/all
+CMakeFiles/test.dir/all: CMakeFiles/Radio.dir/all
+CMakeFiles/test.dir/all: CMakeFiles/Seal.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=11,12 "Built target test"
+.PHONY : CMakeFiles/test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
+.PHONY : CMakeFiles/test.dir/rule
+
+# Convenience name for target.
+test: CMakeFiles/test.dir/rule
+.PHONY : test
+
+# clean rule for target.
+CMakeFiles/test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
+.PHONY : CMakeFiles/test.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
 CMakeFiles/main.dir/all: CMakeFiles/Map.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/Bucket.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/NewsAgency.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/App.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/Radio.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/Seal.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=5,6 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikita/CLionProjects/lab3/build/CMakeFiles --progress-num=9,10 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikita/CLionProjects/lab3/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule

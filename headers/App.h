@@ -23,7 +23,7 @@ public:
         return ostream << app.name;
     }
 
-    void regionCount();
+    void regionCount(int threadCount);
 
 
 private:

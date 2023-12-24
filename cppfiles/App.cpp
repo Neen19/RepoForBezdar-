@@ -42,8 +42,8 @@ void App::printTyped(AgencyType type) {
 }
 
 
-void App::regionCount() {
-    agencies.regionCount(4);
+void App::regionCount(int threadNum) {
+    agencies.regionCount(threadNum);
 }
 
 

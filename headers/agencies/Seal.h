@@ -18,6 +18,9 @@ public:
 
     std::set<Week> getDays();
 
+    Seal(const std::string &id, int license, const std::string &addres, const std::string &profile, AgencyType type,
+         const std::string &edition, const std::set<Week> &days);
+
     void setDays(std::set<Week>);
 
     friend std::ostream &operator<<(std::ostream& s, const Seal& seal);

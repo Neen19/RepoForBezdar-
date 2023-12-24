@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libBucket.a CMakeFiles/Bucket.dir/cppFiles/Bucket.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libBucket.a

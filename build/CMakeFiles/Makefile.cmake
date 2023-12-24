@@ -49,5 +49,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Map.dir/DependInfo.cmake"
   "CMakeFiles/Bucket.dir/DependInfo.cmake"
+  "CMakeFiles/NewsAgency.dir/DependInfo.cmake"
+  "CMakeFiles/App.dir/DependInfo.cmake"
+  "CMakeFiles/Radio.dir/DependInfo.cmake"
+  "CMakeFiles/Seal.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   )

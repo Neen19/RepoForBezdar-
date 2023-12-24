@@ -143,6 +143,71 @@ Bucket/fast:
 .PHONY : Bucket/fast
 
 #=============================================================================
+# Target rules for targets named NewsAgency
+
+# Build rule for target.
+NewsAgency: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NewsAgency
+.PHONY : NewsAgency
+
+# fast build rule for target.
+NewsAgency/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewsAgency.dir/build.make CMakeFiles/NewsAgency.dir/build
+.PHONY : NewsAgency/fast
+
+#=============================================================================
+# Target rules for targets named App
+
+# Build rule for target.
+App: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 App
+.PHONY : App
+
+# fast build rule for target.
+App/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/build
+.PHONY : App/fast
+
+#=============================================================================
+# Target rules for targets named Radio
+
+# Build rule for target.
+Radio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Radio
+.PHONY : Radio
+
+# fast build rule for target.
+Radio/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Radio.dir/build.make CMakeFiles/Radio.dir/build
+.PHONY : Radio/fast
+
+#=============================================================================
+# Target rules for targets named Seal
+
+# Build rule for target.
+Seal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Seal
+.PHONY : Seal
+
+# fast build rule for target.
+Seal/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Seal.dir/build.make CMakeFiles/Seal.dir/build
+.PHONY : Seal/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -155,77 +220,149 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-cppFiles/Bucket.o: cppFiles/Bucket.cpp.o
-.PHONY : cppFiles/Bucket.o
+cppfiles/App.o: cppfiles/App.cpp.o
+.PHONY : cppfiles/App.o
 
 # target to build an object file
-cppFiles/Bucket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bucket.dir/build.make CMakeFiles/Bucket.dir/cppFiles/Bucket.cpp.o
-.PHONY : cppFiles/Bucket.cpp.o
+cppfiles/App.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/cppfiles/App.cpp.o
+.PHONY : cppfiles/App.cpp.o
 
-cppFiles/Bucket.i: cppFiles/Bucket.cpp.i
-.PHONY : cppFiles/Bucket.i
+cppfiles/App.i: cppfiles/App.cpp.i
+.PHONY : cppfiles/App.i
 
 # target to preprocess a source file
-cppFiles/Bucket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bucket.dir/build.make CMakeFiles/Bucket.dir/cppFiles/Bucket.cpp.i
-.PHONY : cppFiles/Bucket.cpp.i
+cppfiles/App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/cppfiles/App.cpp.i
+.PHONY : cppfiles/App.cpp.i
 
-cppFiles/Bucket.s: cppFiles/Bucket.cpp.s
-.PHONY : cppFiles/Bucket.s
+cppfiles/App.s: cppfiles/App.cpp.s
+.PHONY : cppfiles/App.s
 
 # target to generate assembly for a file
-cppFiles/Bucket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bucket.dir/build.make CMakeFiles/Bucket.dir/cppFiles/Bucket.cpp.s
-.PHONY : cppFiles/Bucket.cpp.s
+cppfiles/App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/cppfiles/App.cpp.s
+.PHONY : cppfiles/App.cpp.s
 
-cppFiles/Map.o: cppFiles/Map.cpp.o
-.PHONY : cppFiles/Map.o
+cppfiles/agencies/NewsAgency.o: cppfiles/agencies/NewsAgency.cpp.o
+.PHONY : cppfiles/agencies/NewsAgency.o
 
 # target to build an object file
-cppFiles/Map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/cppFiles/Map.cpp.o
-.PHONY : cppFiles/Map.cpp.o
+cppfiles/agencies/NewsAgency.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewsAgency.dir/build.make CMakeFiles/NewsAgency.dir/cppfiles/agencies/NewsAgency.cpp.o
+.PHONY : cppfiles/agencies/NewsAgency.cpp.o
 
-cppFiles/Map.i: cppFiles/Map.cpp.i
-.PHONY : cppFiles/Map.i
+cppfiles/agencies/NewsAgency.i: cppfiles/agencies/NewsAgency.cpp.i
+.PHONY : cppfiles/agencies/NewsAgency.i
 
 # target to preprocess a source file
-cppFiles/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/cppFiles/Map.cpp.i
-.PHONY : cppFiles/Map.cpp.i
+cppfiles/agencies/NewsAgency.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewsAgency.dir/build.make CMakeFiles/NewsAgency.dir/cppfiles/agencies/NewsAgency.cpp.i
+.PHONY : cppfiles/agencies/NewsAgency.cpp.i
 
-cppFiles/Map.s: cppFiles/Map.cpp.s
-.PHONY : cppFiles/Map.s
+cppfiles/agencies/NewsAgency.s: cppfiles/agencies/NewsAgency.cpp.s
+.PHONY : cppfiles/agencies/NewsAgency.s
 
 # target to generate assembly for a file
-cppFiles/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/cppFiles/Map.cpp.s
-.PHONY : cppFiles/Map.cpp.s
+cppfiles/agencies/NewsAgency.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NewsAgency.dir/build.make CMakeFiles/NewsAgency.dir/cppfiles/agencies/NewsAgency.cpp.s
+.PHONY : cppfiles/agencies/NewsAgency.cpp.s
 
-cppFiles/main.o: cppFiles/main.cpp.o
-.PHONY : cppFiles/main.o
+cppfiles/agencies/Radio.o: cppfiles/agencies/Radio.cpp.o
+.PHONY : cppfiles/agencies/Radio.o
 
 # target to build an object file
-cppFiles/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppFiles/main.cpp.o
-.PHONY : cppFiles/main.cpp.o
+cppfiles/agencies/Radio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Radio.dir/build.make CMakeFiles/Radio.dir/cppfiles/agencies/Radio.cpp.o
+.PHONY : cppfiles/agencies/Radio.cpp.o
 
-cppFiles/main.i: cppFiles/main.cpp.i
-.PHONY : cppFiles/main.i
+cppfiles/agencies/Radio.i: cppfiles/agencies/Radio.cpp.i
+.PHONY : cppfiles/agencies/Radio.i
 
 # target to preprocess a source file
-cppFiles/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppFiles/main.cpp.i
-.PHONY : cppFiles/main.cpp.i
+cppfiles/agencies/Radio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Radio.dir/build.make CMakeFiles/Radio.dir/cppfiles/agencies/Radio.cpp.i
+.PHONY : cppfiles/agencies/Radio.cpp.i
 
-cppFiles/main.s: cppFiles/main.cpp.s
-.PHONY : cppFiles/main.s
+cppfiles/agencies/Radio.s: cppfiles/agencies/Radio.cpp.s
+.PHONY : cppfiles/agencies/Radio.s
 
 # target to generate assembly for a file
-cppFiles/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppFiles/main.cpp.s
-.PHONY : cppFiles/main.cpp.s
+cppfiles/agencies/Radio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Radio.dir/build.make CMakeFiles/Radio.dir/cppfiles/agencies/Radio.cpp.s
+.PHONY : cppfiles/agencies/Radio.cpp.s
+
+cppfiles/agencies/Seal.o: cppfiles/agencies/Seal.cpp.o
+.PHONY : cppfiles/agencies/Seal.o
+
+# target to build an object file
+cppfiles/agencies/Seal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Seal.dir/build.make CMakeFiles/Seal.dir/cppfiles/agencies/Seal.cpp.o
+.PHONY : cppfiles/agencies/Seal.cpp.o
+
+cppfiles/agencies/Seal.i: cppfiles/agencies/Seal.cpp.i
+.PHONY : cppfiles/agencies/Seal.i
+
+# target to preprocess a source file
+cppfiles/agencies/Seal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Seal.dir/build.make CMakeFiles/Seal.dir/cppfiles/agencies/Seal.cpp.i
+.PHONY : cppfiles/agencies/Seal.cpp.i
+
+cppfiles/agencies/Seal.s: cppfiles/agencies/Seal.cpp.s
+.PHONY : cppfiles/agencies/Seal.s
+
+# target to generate assembly for a file
+cppfiles/agencies/Seal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Seal.dir/build.make CMakeFiles/Seal.dir/cppfiles/agencies/Seal.cpp.s
+.PHONY : cppfiles/agencies/Seal.cpp.s
+
+cppfiles/main.o: cppfiles/main.cpp.o
+.PHONY : cppfiles/main.o
+
+# target to build an object file
+cppfiles/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppfiles/main.cpp.o
+.PHONY : cppfiles/main.cpp.o
+
+cppfiles/main.i: cppfiles/main.cpp.i
+.PHONY : cppfiles/main.i
+
+# target to preprocess a source file
+cppfiles/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppfiles/main.cpp.i
+.PHONY : cppfiles/main.cpp.i
+
+cppfiles/main.s: cppfiles/main.cpp.s
+.PHONY : cppfiles/main.s
+
+# target to generate assembly for a file
+cppfiles/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppfiles/main.cpp.s
+.PHONY : cppfiles/main.cpp.s
+
+tests/Test.o: tests/Test.cpp.o
+.PHONY : tests/Test.o
+
+# target to build an object file
+tests/Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/Test.cpp.o
+.PHONY : tests/Test.cpp.o
+
+tests/Test.i: tests/Test.cpp.i
+.PHONY : tests/Test.i
+
+# target to preprocess a source file
+tests/Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/Test.cpp.i
+.PHONY : tests/Test.cpp.i
+
+tests/Test.s: tests/Test.cpp.s
+.PHONY : tests/Test.s
+
+# target to generate assembly for a file
+tests/Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/Test.cpp.s
+.PHONY : tests/Test.cpp.s
 
 # Help Target
 help:
@@ -235,18 +372,32 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... App"
 	@echo "... Bucket"
 	@echo "... Map"
+	@echo "... NewsAgency"
+	@echo "... Radio"
+	@echo "... Seal"
 	@echo "... main"
-	@echo "... cppFiles/Bucket.o"
-	@echo "... cppFiles/Bucket.i"
-	@echo "... cppFiles/Bucket.s"
-	@echo "... cppFiles/Map.o"
-	@echo "... cppFiles/Map.i"
-	@echo "... cppFiles/Map.s"
-	@echo "... cppFiles/main.o"
-	@echo "... cppFiles/main.i"
-	@echo "... cppFiles/main.s"
+	@echo "... test"
+	@echo "... cppfiles/App.o"
+	@echo "... cppfiles/App.i"
+	@echo "... cppfiles/App.s"
+	@echo "... cppfiles/agencies/NewsAgency.o"
+	@echo "... cppfiles/agencies/NewsAgency.i"
+	@echo "... cppfiles/agencies/NewsAgency.s"
+	@echo "... cppfiles/agencies/Radio.o"
+	@echo "... cppfiles/agencies/Radio.i"
+	@echo "... cppfiles/agencies/Radio.s"
+	@echo "... cppfiles/agencies/Seal.o"
+	@echo "... cppfiles/agencies/Seal.i"
+	@echo "... cppfiles/agencies/Seal.s"
+	@echo "... cppfiles/main.o"
+	@echo "... cppfiles/main.i"
+	@echo "... cppfiles/main.s"
+	@echo "... tests/Test.o"
+	@echo "... tests/Test.i"
+	@echo "... tests/Test.s"
 .PHONY : help
 
 

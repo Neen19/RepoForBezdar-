@@ -23,3 +23,6 @@ std::string NewsAgency::getProfile() {
 NewsAgency::NewsAgency(AgencyType type) {
     this->type = type;
 }
+
+NewsAgency::NewsAgency(const std::string &id, int license, const std::string &addres, const std::string &profile,
+                       AgencyType type) : id(id), license(license), addres(addres), profile(profile), type(type) {}

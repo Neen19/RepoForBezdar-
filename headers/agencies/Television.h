@@ -9,9 +9,15 @@
 #include "../../enums/AgencyType.h"
 
 
+
+
 class Television : public NewsAgency {
 public:
-    Television() : NewsAgency(AgencyType::TELEVISION) {};
+    Television() : NewsAgency(AgencyType::TELEVISION) {}
+
+    Television(const std::string &id, int license, const std::string &addres, const std::string &profile,
+                           AgencyType type, int channel) : NewsAgency(id, license, addres, profile, type),
+                                                           channel(channel) {}
 
     int getChannel() { return this->channel; };
 

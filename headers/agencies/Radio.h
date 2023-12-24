@@ -8,6 +8,10 @@
 
 class Radio : public NewsAgency {
 public:
+
+    Radio(const std::string &id, int license, const std::string &addres, const std::string &profile, AgencyType type,
+          const std::vector<std::pair<int, int>> &pairs);
+
     Radio() : NewsAgency(AgencyType::RADIO) {};
 
     void chPair(std::pair<int, int> pair, int ind);

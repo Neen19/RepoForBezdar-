@@ -15,6 +15,9 @@ class NewsAgency {
 public:
     NewsAgency() = default;
 
+    NewsAgency(const std::string &id, int license, const std::string &addres, const std::string &profile,
+               AgencyType type);
+
     AgencyType getType();
 
     std::string getAddr();
