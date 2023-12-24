@@ -1,8 +1,6 @@
-////
-// Created by nikita on 19.11.2023.
-//
 
-#include "../../headers/Agencies/Seal.h"
+
+#include "../../headers/agencies/Seal.h"
 
 std::string Seal::getEdition() { return this->edition; }
 
@@ -12,5 +10,10 @@ std::set<Week> Seal::getDays() { return this->days; }
 
 void Seal::setDays(std::set<Week> days) {
     this->days = days;
+}
+
+std::ostream &operator<<(std::ostream& ostream, const Seal& seal) {
+    ostream << seal.profile;
+    return ostream;
 }
 

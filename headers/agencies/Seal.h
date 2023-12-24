@@ -2,7 +2,7 @@
 #define LAB3_SEAL_H
 
 #include "NewsAgency.h"
-#include "../../Enums/Week.h"
+#include "../../enums/Week.h"
 #include <set>
 #include <vector>
 
@@ -20,10 +20,7 @@ public:
 
     void setDays(std::set<Week>);
 
-    friend std::ostream &operator<<(std::ostream& s, const Seal& seal) {
-        s << seal.profile;
-        return s;
-    }
+    friend std::ostream &operator<<(std::ostream& s, const Seal& seal);
 
 private:
     std::string edition;

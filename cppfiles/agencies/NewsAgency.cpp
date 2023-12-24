@@ -1,4 +1,4 @@
-#include "../../headers/Agencies/NewsAgency.h"
+#include "../../headers/agencies/NewsAgency.h"
 
 AgencyType NewsAgency::getType() {
     return this->type;
@@ -10,6 +10,10 @@ std::string NewsAgency::getAddr() {
 
 int NewsAgency::getLicense() {
     return this->license;
+}
+
+void NewsAgency::nullLicense() {
+    this->license = NULL_LICENSE;
 }
 
 std::string NewsAgency::getProfile() {

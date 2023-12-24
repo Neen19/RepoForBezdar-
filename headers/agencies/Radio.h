@@ -14,6 +14,8 @@ public:
 
     std::vector<std::pair<int, int>> getPairs();
 
+    friend std::ostream &operator<<(std::ostream& s, const Radio& seal);
+
 
 private:
     std::vector<std::pair<int, int>> pairs;

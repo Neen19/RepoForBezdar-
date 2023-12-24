@@ -35,6 +35,6 @@ private:
     bool busy;
 };
 
-#include "../cppFiles/Bucket.tcc"
+#include "../cppfiles/Bucket.tcc"
 
 #endif //LAB3_BUCKET_H

@@ -2,6 +2,8 @@
 /Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/Bucket.dir
 /Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/NewsAgency.dir
 /Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/App.dir
+/Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/Radio.dir
+/Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/Seal.dir
 /Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/main.dir
 /Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/nikita/CLionProjects/lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
