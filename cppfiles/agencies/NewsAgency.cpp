@@ -4,6 +4,30 @@ AgencyType NewsAgency::getType() {
     return this->type;
 }
 
+const std::string &NewsAgency::getId() const {
+    return id;
+}
+
+void NewsAgency::setId(const std::string &id) {
+    NewsAgency::id = id;
+}
+
+void NewsAgency::setLicense(int license) {
+    NewsAgency::license = license;
+}
+
+void NewsAgency::setAddres(const std::string &addres) {
+    NewsAgency::addres = addres;
+}
+
+void NewsAgency::setType(AgencyType type) {
+    NewsAgency::type = type;
+}
+
+const std::string &NewsAgency::getAddres() const {
+    return addres;
+}
+
 std::string NewsAgency::getAddr() {
     return this->addres;
 }

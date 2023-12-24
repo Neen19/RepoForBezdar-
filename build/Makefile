@@ -195,6 +195,32 @@ Seal/fast:
 .PHONY : Seal/fast
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named mains
+
+# Build rule for target.
+mains: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mains
+.PHONY : mains
+
+# fast build rule for target.
+mains/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mains.dir/build.make CMakeFiles/mains.dir/build
+.PHONY : mains/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -321,6 +347,7 @@ cppfiles/main.o: cppfiles/main.cpp.o
 
 # target to build an object file
 cppfiles/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mains.dir/build.make CMakeFiles/mains.dir/cppfiles/main.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppfiles/main.cpp.o
 .PHONY : cppfiles/main.cpp.o
 
@@ -329,6 +356,7 @@ cppfiles/main.i: cppfiles/main.cpp.i
 
 # target to preprocess a source file
 cppfiles/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mains.dir/build.make CMakeFiles/mains.dir/cppfiles/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppfiles/main.cpp.i
 .PHONY : cppfiles/main.cpp.i
 
@@ -337,6 +365,7 @@ cppfiles/main.s: cppfiles/main.cpp.s
 
 # target to generate assembly for a file
 cppfiles/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mains.dir/build.make CMakeFiles/mains.dir/cppfiles/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cppfiles/main.cpp.s
 .PHONY : cppfiles/main.cpp.s
 
@@ -345,6 +374,8 @@ tests/Test.o: tests/Test.cpp.o
 
 # target to build an object file
 tests/Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/tests/Test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/Test.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/Test.cpp.o
 .PHONY : tests/Test.cpp.o
 
@@ -353,6 +384,8 @@ tests/Test.i: tests/Test.cpp.i
 
 # target to preprocess a source file
 tests/Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/tests/Test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/Test.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/Test.cpp.i
 .PHONY : tests/Test.cpp.i
 
@@ -361,6 +394,8 @@ tests/Test.s: tests/Test.cpp.s
 
 # target to generate assembly for a file
 tests/Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/tests/Test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/Test.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/Test.cpp.s
 .PHONY : tests/Test.cpp.s
 
@@ -379,7 +414,9 @@ help:
 	@echo "... Radio"
 	@echo "... Seal"
 	@echo "... main"
+	@echo "... mains"
 	@echo "... test"
+	@echo "... tests"
 	@echo "... cppfiles/App.o"
 	@echo "... cppfiles/App.i"
 	@echo "... cppfiles/App.s"

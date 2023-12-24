@@ -33,11 +33,11 @@ int main() {
                              109,
                              "Moscow",
                              "profile",
-                             AgencyType::SEAL,
+                             AgencyType::RADIO,
                              vect);
     App app;
-        app.reg("seal", seal);
+    app.reg("seal", seal);
     app.reg("radio", radio);
     app.reg("television", television);
-    app.regionCount(2);
+    app.printTyped(AgencyType::SEAL);
 }

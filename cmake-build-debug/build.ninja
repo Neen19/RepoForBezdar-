@@ -63,7 +63,7 @@ build cmake_object_order_depends_target_NewsAgency: phony || CMakeFiles/NewsAgen
 
 build CMakeFiles/NewsAgency.dir/cppfiles/agencies/NewsAgency.cpp.o: CXX_COMPILER__NewsAgency_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppfiles/agencies/NewsAgency.cpp || cmake_object_order_depends_target_NewsAgency
   DEP_FILE = CMakeFiles/NewsAgency.dir/cppfiles/agencies/NewsAgency.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics --coverage
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/NewsAgency.dir
   OBJECT_FILE_DIR = CMakeFiles/NewsAgency.dir/cppfiles/agencies
 
@@ -95,9 +95,15 @@ build cmake_object_order_depends_target_App: phony || CMakeFiles/App.dir
 
 build CMakeFiles/App.dir/cppfiles/App.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppfiles/App.cpp || cmake_object_order_depends_target_App
   DEP_FILE = CMakeFiles/App.dir/cppfiles/App.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics --coverage
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/cppfiles
+
+build CMakeFiles/App.dir/tests/Test.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/nikita/CLionProjects/lab3/tests/Test.cpp || cmake_object_order_depends_target_App
+  DEP_FILE = CMakeFiles/App.dir/tests/Test.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/App.dir
+  OBJECT_FILE_DIR = CMakeFiles/App.dir/tests
 
 
 # =============================================================================
@@ -107,7 +113,7 @@ build CMakeFiles/App.dir/cppfiles/App.cpp.o: CXX_COMPILER__App_unscanned_Debug /
 #############################################
 # Link the static library libApp.a
 
-build libApp.a: CXX_STATIC_LIBRARY_LINKER__App_Debug CMakeFiles/App.dir/cppfiles/App.cpp.o
+build libApp.a: CXX_STATIC_LIBRARY_LINKER__App_Debug CMakeFiles/App.dir/cppfiles/App.cpp.o CMakeFiles/App.dir/tests/Test.cpp.o
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/App.dir
@@ -127,7 +133,7 @@ build cmake_object_order_depends_target_Radio: phony || CMakeFiles/Radio.dir
 
 build CMakeFiles/Radio.dir/cppfiles/agencies/Radio.cpp.o: CXX_COMPILER__Radio_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppfiles/agencies/Radio.cpp || cmake_object_order_depends_target_Radio
   DEP_FILE = CMakeFiles/Radio.dir/cppfiles/agencies/Radio.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics --coverage
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Radio.dir
   OBJECT_FILE_DIR = CMakeFiles/Radio.dir/cppfiles/agencies
 
@@ -159,7 +165,7 @@ build cmake_object_order_depends_target_Seal: phony || CMakeFiles/Seal.dir
 
 build CMakeFiles/Seal.dir/cppfiles/agencies/Seal.cpp.o: CXX_COMPILER__Seal_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppfiles/agencies/Seal.cpp || cmake_object_order_depends_target_Seal
   DEP_FILE = CMakeFiles/Seal.dir/cppfiles/agencies/Seal.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics --coverage
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Seal.dir
   OBJECT_FILE_DIR = CMakeFiles/Seal.dir/cppfiles/agencies
 
@@ -181,17 +187,81 @@ build libSeal.a: CXX_STATIC_LIBRARY_LINKER__Seal_Debug CMakeFiles/Seal.dir/cppfi
   TARGET_PDB = Seal.a.dbg
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target tests
+
+
+#############################################
+# Order-only phony target for tests
+
+build cmake_object_order_depends_target_tests: phony || CMakeFiles/tests.dir
+
+build CMakeFiles/tests.dir/tests/Test.cpp.o: CXX_COMPILER__tests_unscanned_Debug /Users/nikita/CLionProjects/lab3/tests/Test.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/tests/Test.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tests.dir/tests
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target tests
+
+
+#############################################
+# Link the static library libtests.a
+
+build libtests.a: CXX_STATIC_LIBRARY_LINKER__tests_Debug CMakeFiles/tests.dir/tests/Test.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/tests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libtests.a
+  TARGET_PDB = tests.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mains
+
+
+#############################################
+# Order-only phony target for mains
+
+build cmake_object_order_depends_target_mains: phony || CMakeFiles/mains.dir
+
+build CMakeFiles/mains.dir/cppfiles/main.cpp.o: CXX_COMPILER__mains_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppfiles/main.cpp || cmake_object_order_depends_target_mains
+  DEP_FILE = CMakeFiles/mains.dir/cppfiles/main.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/mains.dir
+  OBJECT_FILE_DIR = CMakeFiles/mains.dir/cppfiles
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mains
+
+
+#############################################
+# Link the static library libmains.a
+
+build libmains.a: CXX_STATIC_LIBRARY_LINKER__mains_Debug CMakeFiles/mains.dir/cppfiles/main.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/mains.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libmains.a
+  TARGET_PDB = mains.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test
 
 
 #############################################
 # Order-only phony target for test
 
-build cmake_object_order_depends_target_test: phony || Bucket Map cmake_object_order_depends_target_App cmake_object_order_depends_target_NewsAgency cmake_object_order_depends_target_Radio cmake_object_order_depends_target_Seal
+build cmake_object_order_depends_target_test: phony || Bucket Map cmake_object_order_depends_target_App cmake_object_order_depends_target_NewsAgency cmake_object_order_depends_target_Radio cmake_object_order_depends_target_Seal cmake_object_order_depends_target_mains cmake_object_order_depends_target_tests
 
 build CMakeFiles/test.dir/tests/Test.cpp.o: CXX_COMPILER__test_unscanned_Debug /Users/nikita/CLionProjects/lab3/tests/Test.cpp || cmake_object_order_depends_target_test
   DEP_FILE = CMakeFiles/test.dir/tests/Test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics --coverage
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/test.dir
   OBJECT_FILE_DIR = CMakeFiles/test.dir/tests
 
@@ -203,10 +273,9 @@ build CMakeFiles/test.dir/tests/Test.cpp.o: CXX_COMPILER__test_unscanned_Debug /
 #############################################
 # Link the executable test
 
-build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/tests/Test.cpp.o | libNewsAgency.a libApp.a libRadio.a libSeal.a libNewsAgency.a libApp.a libRadio.a libSeal.a || Bucket Map libApp.a libNewsAgency.a libRadio.a libSeal.a
+build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/tests/Test.cpp.o | libmains.a libtests.a libNewsAgency.a libApp.a libRadio.a libSeal.a libNewsAgency.a libApp.a libRadio.a libSeal.a || Bucket Map libApp.a libNewsAgency.a libRadio.a libSeal.a libmains.a libtests.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
-  LINK_FLAGS = --coverage
-  LINK_LIBRARIES = libNewsAgency.a  libApp.a  libRadio.a  libSeal.a  libNewsAgency.a  libApp.a  libRadio.a  libSeal.a
+  LINK_LIBRARIES = libmains.a  libtests.a  libNewsAgency.a  libApp.a  libRadio.a  libSeal.a  libNewsAgency.a  libApp.a  libRadio.a  libSeal.a
   OBJECT_DIR = CMakeFiles/test.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -220,11 +289,11 @@ build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/tests/Test.cpp
 #############################################
 # Order-only phony target for main
 
-build cmake_object_order_depends_target_main: phony || Bucket Map cmake_object_order_depends_target_App cmake_object_order_depends_target_NewsAgency cmake_object_order_depends_target_Radio cmake_object_order_depends_target_Seal
+build cmake_object_order_depends_target_main: phony || Bucket Map cmake_object_order_depends_target_App cmake_object_order_depends_target_NewsAgency cmake_object_order_depends_target_Radio cmake_object_order_depends_target_Seal cmake_object_order_depends_target_mains cmake_object_order_depends_target_tests
 
 build CMakeFiles/main.dir/cppfiles/main.cpp.o: CXX_COMPILER__main_unscanned_Debug /Users/nikita/CLionProjects/lab3/cppfiles/main.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/cppfiles/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics --coverage
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/cppfiles
 
@@ -236,10 +305,9 @@ build CMakeFiles/main.dir/cppfiles/main.cpp.o: CXX_COMPILER__main_unscanned_Debu
 #############################################
 # Link the executable main
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/cppfiles/main.cpp.o | libNewsAgency.a libApp.a libRadio.a libSeal.a libNewsAgency.a libApp.a libRadio.a libSeal.a || Bucket Map libApp.a libNewsAgency.a libRadio.a libSeal.a
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/cppfiles/main.cpp.o | libmains.a libtests.a libNewsAgency.a libApp.a libRadio.a libSeal.a libNewsAgency.a libApp.a libRadio.a libSeal.a || Bucket Map libApp.a libNewsAgency.a libRadio.a libSeal.a libmains.a libtests.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
-  LINK_FLAGS = --coverage
-  LINK_LIBRARIES = libNewsAgency.a  libApp.a  libRadio.a  libSeal.a  libNewsAgency.a  libApp.a  libRadio.a  libSeal.a
+  LINK_LIBRARIES = libmains.a  libtests.a  libNewsAgency.a  libApp.a  libRadio.a  libSeal.a  libNewsAgency.a  libApp.a  libRadio.a  libSeal.a
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -280,6 +348,10 @@ build Radio: phony libRadio.a
 
 build Seal: phony libSeal.a
 
+build mains: phony libmains.a
+
+build tests: phony libtests.a
+
 # =============================================================================
 # Folder targets.
 
@@ -288,7 +360,7 @@ build Seal: phony libSeal.a
 #############################################
 # Folder: /Users/nikita/CLionProjects/lab3/cmake-build-debug
 
-build all: phony Map Bucket libNewsAgency.a libApp.a libRadio.a libSeal.a test main
+build all: phony Map Bucket libNewsAgency.a libApp.a libRadio.a libSeal.a libtests.a libmains.a test main
 
 # =============================================================================
 # Built-in targets

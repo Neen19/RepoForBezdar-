@@ -16,3 +16,7 @@ std::ostream &operator<<(std::ostream& ostream, const Radio& radio) {
 Radio::Radio(const std::string &id, int license, const std::string &addres, const std::string &profile, AgencyType type,
              const std::vector<std::pair<int, int>> &pairs) : NewsAgency(id, license, addres, profile, type),
                                                               pairs(pairs) {}
+
+void Radio::setPairs(const std::vector<std::pair<int, int>> &pairs) {
+    Radio::pairs = pairs;
+}

@@ -53,6 +53,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/App.dir/DependInfo.cmake"
   "CMakeFiles/Radio.dir/DependInfo.cmake"
   "CMakeFiles/Seal.dir/DependInfo.cmake"
+  "CMakeFiles/tests.dir/DependInfo.cmake"
+  "CMakeFiles/mains.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   )

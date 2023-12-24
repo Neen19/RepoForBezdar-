@@ -20,6 +20,7 @@ public:
 
     friend std::ostream &operator<<(std::ostream& s, const Radio& seal);
 
+    void setPairs(const std::vector<std::pair<int, int>> &pairs);
 
 private:
     std::vector<std::pair<int, int>> pairs;

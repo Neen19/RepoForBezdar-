@@ -36,6 +36,18 @@ public:
 
     virtual ~NewsAgency() = default;
 
+    const std::string &getId() const;
+
+    const std::string &getAddres() const;
+
+    void setId(const std::string &id);
+
+    void setLicense(int license);
+
+    void setAddres(const std::string &addres);
+
+    void setType(AgencyType type);
+
 
 protected:
     NewsAgency(AgencyType type);

@@ -26,47 +26,46 @@ public:
 
     std::string print();
 
-    class Iterator {
-    private:
-        Bucket<T> *current;
-        int index;
-        const Map<T> *map;
-        int lastInd;
-    public:
-        Iterator(const Map<T> *map, int index = 0, int lastInd = 0) : map(map), index(index), lastInd(lastInd) {
-            current = map->buckets + index;
-            while (index < map->capacity && !current->getBusy()) {
-                ++index;
-                ++current;
+        class Iterator {
+        private:
+            Bucket<T> *current;
+            int index;
+            const Map<T> *map;
+
+        public:
+            Iterator(const Map<T> *map, int index = 0) : map(map), index(index) {
+                current = map->buckets + index;
+                while (index < map->capacity && !current->getBusy()) {
+                    ++index;
+                    ++current;
+                }
             }
+
+            Iterator& operator++() {
+                do {
+                    ++index;
+                    ++current;
+                } while (index < map->capacity && !current->getBusy());
+                return *this;
+            }
+
+            bool operator!=(const Iterator& other) const {
+                return index != other.index;
+            }
+
+            Bucket<T>& operator*() const {
+                return *current;
+            }
+        };
+
+        Iterator begin() const {
+            return Iterator(this, 0);
         }
 
-        Iterator &operator++() {
-            do {
-                ++index;
-                ++current;
-            } while (index < lastInd && !current->getBusy());
-            return *this;
+        Iterator end() const {
+            return Iterator(this, capacity);
         }
 
-        bool operator!=(const Iterator &other) const {
-            return index != other.index;
-        }
-
-        Bucket<T> &operator*() const {
-            return *current;
-        }
-    };
-
-    Iterator begin(int ind = 0) const {
-        if (ind == 0) return Iterator(this, 0);
-        return Iterator(this, ind);
-    }
-
-    Iterator end(int ind = 0) const {
-        if (ind == 0 || ind >= capacity) return Iterator(this, capacity);
-        return Iterator(this, ind);
-    }
 
     int getCapacity() { return capacity; }
     Bucket<T> *getBuckets() { return buckets; }
