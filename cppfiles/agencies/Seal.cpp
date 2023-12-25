@@ -13,7 +13,16 @@ void Seal::setDays(std::set<Week> days) {
 }
 
 std::ostream &operator<<(std::ostream& ostream, const Seal& seal) {
-    ostream << seal.profile;
+    ostream << "name: " << seal.id << std::endl;;
+    ostream << "profile: " << seal.profile << std::endl
+            << "license: " << seal.license << std::endl
+            << "address: " << seal.addres << std::endl
+            << "edition: " << seal.edition << std::endl;
+//    for (auto it : seal.days) {
+//        ostream << it;
+//    }
+
+    ostream << std::endl;
     return ostream;
 }
 

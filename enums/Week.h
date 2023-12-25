@@ -33,8 +33,6 @@ enum class Week {
 //        case Week::SUNDAY:
 //            os << "Sunday";
 //            break;
-//        default:
-//            os.setstate(std::ios_base::failbit); // Обработка ошибки
 //    }
 //    return os;
 //}

@@ -9,7 +9,15 @@ std::vector<std::pair<int, int>> Radio::getPairs() {
 }
 
 std::ostream &operator<<(std::ostream& ostream, const Radio& radio) {
-    ostream << radio.profile;
+    ostream << "name: " << radio.id << std::endl;;
+    ostream << "profile: " << radio.profile << std::endl
+    << "license: " << radio.license << std::endl
+    << "address: " << radio.addres << std::endl
+    << "pairs: ";
+    for (auto it : radio.pairs) {
+        ostream << it.first << " " << it.second << std::endl;
+    }
+    ostream << std::endl;
     return ostream;
 }
 

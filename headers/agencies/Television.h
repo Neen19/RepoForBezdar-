@@ -23,9 +23,14 @@ public:
 
     void setChannel(int channel) { this->channel = channel; };
 
-    friend std::ostream &operator<<(std::ostream& s, const Television& tel) {
-        s << tel.profile;
-        return s;
+    friend std::ostream &operator<<(std::ostream& ostream, const Television& tel) {
+        ostream << "name: " << tel.id << std::endl;;
+        ostream << "profile: " << tel.profile << std::endl
+                << "license: " << tel.license << std::endl
+                << "address: " << tel.addres << std::endl
+                << "chanel: " << tel.channel << std::endl;
+        ostream << std::endl;
+        return ostream;
     };
 
 
